@@ -1,0 +1,13 @@
+{
+  "name":"SpeedTap",
+  "description":"Be the fastest to tap the shapes",
+  "version":"1",
+  "launch_path":"/index.html",
+  "icons": {
+    "128":  "/graphics/icon_128.png"
+  },
+  "developer": {
+    "name":"makevoid",
+    "url":"http://makevoid.com"
+  }
+}

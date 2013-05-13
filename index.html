@@ -1,0 +1,67 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-size: 1.3em;
+  width: 100%;
+  height: 100%;
+}
+
+input, textarea, button {
+  font-size: 1em;
+}
+
+header {
+  position: absolute;
+  background: rgba(200, 200, 200, 0.4);
+  padding: 10px;
+}
+
+h1 {
+  font-size: 1.6em;
+  display: inline-block;
+}
+
+.refresh {
+  margin: 0 0 0 10px;
+}
+
+.logs {
+  position: absolute;
+  bottom: 0;
+  background: rgba(200, 200, 200, 0.4);
+  padding: 0 0.5em;
+}
+
+canvas {
+  display: block;
+  background: #222;
+  width: 100%;
+  height: 100%;
+
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+}
+
+.logs {
+  background: rgba(200, 200, 200, 0.4);
+  padding: 0 0.5em;
+}
+
+</style>
+<script type="text/javascript" src="/js/main.js"></script>
+<header>
+  <h1>SpeedTap</h1>
+  <button class="refresh" onclick="page.refresh()">↺</button>
+</header>
+<canvas></canvas>
+<section class="logs"></section>
