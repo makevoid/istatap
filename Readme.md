@@ -1,0 +1,3 @@
+# Istatap
+
+domain: istatap.com
