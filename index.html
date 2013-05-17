@@ -32,11 +32,22 @@ h1 {
   margin: 0 0 0 10px;
 }
 
-.logs {
+.logs, .points, .timer {
   position: absolute;
-  bottom: 0;
   background: rgba(200, 200, 200, 0.4);
   padding: 0 0.5em;
+}
+
+.timer {
+  top: 0;
+}
+
+.logs, .points {
+  bottom: 0;
+}
+
+.points, .timer {
+  right: 0;
 }
 
 canvas {
@@ -58,10 +69,13 @@ canvas {
 }
 
 </style>
+<script type="text/javascript" src="/js/vendor/underscore.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 <header>
-  <h1>SpeedTap</h1>
+  <h1>IstaTap</h1>
   <button class="refresh" onclick="page.refresh()">↺</button>
 </header>
 <canvas></canvas>
+<section class="timer"></section>
+<section class="points">0</section>
 <section class="logs"></section>
